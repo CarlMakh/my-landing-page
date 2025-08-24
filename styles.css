@@ -1,9 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .parent-wrapper {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
     border: 0;
+    flex-grow: 1;
 }
 
 .top-box {
@@ -181,6 +188,8 @@ a {
     margin-top: 60px;
     padding: 60px;
     border-radius: 16px;
+    flex: 1;
+    max-width: 100%;
 }
 
 .call-to-action-left {
@@ -191,6 +200,7 @@ a {
 }
 
 .call-to-action-header {
+    display: flex;
     font-weight: 900;
     font-size: 30px;
 }
@@ -207,4 +217,15 @@ a {
     width: 120px;
     border-radius: 13px;
     font-size: large;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: white;
+    margin-top: 90px;
+    padding: 26px;
+    margin-bottom: auto;
 }
